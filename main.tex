@@ -100,7 +100,7 @@
       $\mapsto$ fallas, costo, atraso del proyecto
     \item dificultad en la enumeraci\'on de los estados de un programa
       $\mapsto$ baja confiabilidad en el programa
-    \item complejidad en las funciones 
+    \item complejidad en las funciones
       $\mapsto$ dificultad en el uso de las mismas
     \item complejidad en las estructuras usadas
       $\mapsto$ dificultades en la modificabilidad, problemas de seguridad
@@ -165,7 +165,7 @@
 
 
 \begin{frame}[fragile]
-  \frametitle{Dificultades accidentales que fueron resueltas}
+  \frametitle{Dificultades accidentales resueltas}
 
   \begin{itemize}
     \item[Lenguajes de alto nivel]
@@ -231,8 +231,8 @@
 
   Un ejemplo interesante que se da es el un (potencial) sistema experto que
   funciona como asistente de testeo.
-  A medida que se desarolla una aplicaci\'on, el sistema va adquiriendo reglas,
-  pasando de sugerencias muy generales a sigerencias cada vez m\'as relacionadas
+  A medida que se desarrolla una aplicaci\'on, el sistema va adquiriendo reglas,
+  pasando de sugerencias muy generales a sugerencias cada vez m\'as relacionadas
   con la estructura del sistema.
 
   El trabajo requerido para generar las reglas de diagn\'ostico es trabajo
@@ -246,32 +246,58 @@
 
 \begin{frame}[fragile]
   \frametitle{Programaci\'on ``autom\'atica'' y programaci\'on gr\'afica}
+  La programaci\'on autom\'atica es un concepto que existe desde la d\'ecada del 60:
+  hacer que el c\'odigo de alguna manera, se escriba solo. Seg\'un Brooks y Parnas,
+  este concepto es puro \textit{glamour}, solo es programar con un nivel de abstracci\'on
+  una capa superior.
 
-  TODO
+  La programaci\'on gr\'afica tambi\'en es puesta al costado por Brooks, no es posible
+  representar el problema esencial del software en dos dimensiones, los diagramas
+  de flujos, clases, etc. son pobres representaciones de un problema multa dimensional,
+  el espacio finito no ayuda.
 \end{frame}
 
 
 \begin{frame}[fragile]
   \frametitle{Verificaci\'on de programas}
-  TODO
+  La verificaci\'on de programas es un problema dif\'icil de resolver en los casos
+  no-triviales, ni tampoco garantizan que no tengan bugs. Solamente se puede
+  probar que condicen con una especificaci\'on hecha a mano. Construir la especificaci\'on
+  de lo que se quiere construir es la tarea mas dif\'icil del software.
 \end{frame}
 
 \begin{frame}[fragile]
-  \frametitle{Ambientes de desarollo y \textit{hardware}}
-  TODO
+  \frametitle{Ambientes de desarrollo y \textit{hardware}}
+  Los grandes inconvenientes han sido resueltos: los formatos de archivos se han
+  estandarizado, las interfaces de desarrollo son \'utiles y compilar no tarda horas en
+  la mayor\'ia de los casos. Se propone usar bases de datos donde guardar los detalles
+  del sistema para facilitar la comprensi\'on del c\'odigo.
 \end{frame}
 
 
 \begin{frame}[fragile]
   \frametitle{Ataques prometedores contra la esencia conceptual}
-  Comprar \textit{vs.} construir
-  TODO
+  Comprar \textit{vs.} construir \\
+  La mejor manera de acelerar el desarrollo es no desarrollar. Con el avance de las
+  librer\'ias estandarizadas y programas ofim\'aticas gen\'ericos, mucho de lo que se hacia
+  in-house ahora se puede comprar, a costos muy inferiores al de desarrollarlo y teni\'endolo
+  ya. Las empresas han dado el brazo a torcer: no se requiere que los productos se ajusten a
+  los mecanismos actuales sino que ajustan los mecanismos a los productos, para abaratar costos
+  y estandarizarse.
 \end{frame}
 
 
 \begin{frame}[fragile]
   \frametitle{Refinamiento de requerimientos y prototipado r\'apido}
-  TODO
+  La decisi\'on mas dif\'icil en la construcci\'on del software es \textbf{que software construir}. Esto
+  compone obtener los requerimientos necesarios para poder determinar cuales son los relevantes y
+  prioritarios y cuales son accidentales nomas. El problema de definir que quiere un cliente
+  es, seg\'un Brooks, imposible sin un producto en las manos para que pueda decir si eso es lo
+  que tenia en mente.
+
+  Lo mas importante de todo entonces, va a ser poder desarrollar m\'etodos y herramientas para
+  construir prototipos r\'apidos, y solo una vez validados con el cliente, se deben seguir
+  agregando funcionalidades. Evitar crear software por comit\'e y licitaci\'on a caja cerrada.
 \end{frame}
 
 
